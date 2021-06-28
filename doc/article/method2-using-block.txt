@@ -1,0 +1,25 @@
+.method public hidebysig instance void  Method2() cil managed
+{
+  // Code size       35 (0x23)
+  .maxstack  2
+  .locals init (class [System.Runtime]System.IO.StreamWriter V_0)
+  IL_0000:  ldstr      "file.txt"
+  IL_0005:  newobj     instance void [System.Runtime]System.IO.StreamWriter::.ctor(string)
+  IL_000a:  stloc.0
+  .try
+  {
+    IL_000b:  ldloc.0
+    IL_000c:  ldstr      "some text"
+    IL_0011:  callvirt   instance void [System.Runtime]System.IO.TextWriter::Write(string)
+    IL_0016:  leave.s    IL_0022
+  }  // end .try
+  finally
+  {
+    IL_0018:  ldloc.0
+    IL_0019:  brfalse.s  IL_0021
+    IL_001b:  ldloc.0
+    IL_001c:  callvirt   instance void [System.Runtime]System.IDisposable::Dispose()
+    IL_0021:  endfinally
+  }  // end handler
+  IL_0022:  ret
+} // end of method Class1::Method2
