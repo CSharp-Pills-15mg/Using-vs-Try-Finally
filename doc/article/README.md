@@ -11,7 +11,7 @@ If an object implements the `IDiposable` interface it is is, usually, a good pra
 
 **Question**
 
-Is there a functional difference between the `using` block, a `using` declaration and a `try-finally` block?
+Is there a functional difference between a `using` block, a `using` declaration and a `try-finally` block?
 
 ## 1) Explicitly call `Dispose`
 
