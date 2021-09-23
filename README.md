@@ -1,14 +1,19 @@
 # `using` vs `try-finally`
 
-## Problem Description
+## Pill Category
+
+Language (C#)
+
+## Description
 
 **Manually call `Dispose`**
 
-If an object implements the `IDiposable` interface it is is, usually, a good practice to manually call its `Display` method as soon as the application does not need that object anymore. There are two main ways to do this:
+If an object implements the `IDiposable` interface, it is, usually, a good practice to manually call its `Dispose` method as soon as the application does not need that object anymore. There are two main ways to do this:
 
-- explicitly - Actually call the `Dispose` method.
+- explicitly - Actually call the `Dispose` method. Most suggested in a try-finally block.
 - implicitly - Use a `using` block or a `using` declaration.
 
 **Question**
 
-Is there a functional difference between the `using` block, a `using` declaration and a `try-finally` block?
+- Is there a functional difference between the `using` block, the `using` declaration and a `try-finally` block?
+
