@@ -2,12 +2,16 @@
 
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
-        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <RootNamespace>DustInTheWind.UsingVsTryFinally</RootNamespace>
+        <AssemblyName>DustInTheWind.UsingVsTryFinally</AssemblyName>
+
         <Company>Dust in the Wind</Company>
         <Authors>Dust in the Wind</Authors>
-        <Product>UsingVsTryFinally</Product>
+        <Product>C# Pills 15mg</Product>
+        <Copyright>Copyright © Dust in the Wind 2021</Copyright>
+        <NeutralLanguage>en</NeutralLanguage>
+
         <Description>A C# Pill to demonstrate that there is no functional difference between a 'try-finally' block, a 'using' block and a 'using' declaration.</Description>
-        <Copyright>Copyright © Dust in the Wind 2020</Copyright>
     </PropertyGroup>
 
 </Project>
